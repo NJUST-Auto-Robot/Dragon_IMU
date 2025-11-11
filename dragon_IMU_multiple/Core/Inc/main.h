@@ -38,6 +38,7 @@ extern "C" {
 #include "stm32g4xx_ll_utils.h"
 #include "stm32g4xx_ll_pwr.h"
 #include "stm32g4xx_ll_dma.h"
+#include "stm32g4xx_ll_spi.h"
 #include "stm32g4xx_ll_gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -68,6 +69,16 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define BMI_SCK_Pin LL_GPIO_PIN_13
+#define BMI_SCK_GPIO_Port GPIOB
+#define BMI_MISO_Pin LL_GPIO_PIN_14
+#define BMI_MISO_GPIO_Port GPIOB
+#define BMI_MOSI_Pin LL_GPIO_PIN_15
+#define BMI_MOSI_GPIO_Port GPIOB
+#define BMI_GYRO_Pin LL_GPIO_PIN_8
+#define BMI_GYRO_GPIO_Port GPIOA
+#define BMI_ACCEL_Pin LL_GPIO_PIN_9
+#define BMI_ACCEL_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 
